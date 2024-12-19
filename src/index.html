@@ -3,49 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="app.js"></script>
+    <script type="module" src="encode.js"></script>
     <link rel="stylesheet" href="styles.css" />
-
-    <title>Form with JSON Output</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 600px;
-        margin: 20px auto;
-      }
-      label {
-        display: block;
-        margin-top: 10px;
-      }
-      input,
-      button {
-        margin-top: 5px;
-        padding: 8px;
-        width: 100%;
-      }
-      .output {
-        margin-top: 20px;
-        padding: 10px;
-        background: #f7f7f7;
-        border: 1px solid #ddd;
-      }
-    </style>
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <title>Address Encoder | TRAIT Docs</title>
+    <meta name="description" content="Example of how to encode an address." />
   </head>
   <body>
-    <h1>Generate Encoded Address</h1>
-    <form id="inputForm">
-      <label for="appagenid">Appagenid:</label>
-      <input type="text" id="appagenid" name="appagenid" required />
+    <h1>Address Encoder</h1>
+    <p>Enter your address details to generate an encoded address.</p>
 
-      <label for="taid">Taid:</label>
-      <input type="text" id="taid" name="taid" required />
+    <form id="form">
+      <div class="field">
+        <label for="appagentid"><strong>Application agent ID</strong></label>
+        <input type="text" id="appagentid" name="appagentid" required />
+      </div>
 
-      <button type="submit">Generate Output</button>
+      <button type="submit">Encode Address</button>
     </form>
 
     <div class="output" id="outputContainer" style="display: none">
-      <h2>Output JSON</h2>
+      <h2>Output</h2>
       <pre id="output"></pre>
     </div>
+
+    <a href="./decoder.html" style="display: none"></a>
   </body>
 </html>

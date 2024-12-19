@@ -1,18 +1,67 @@
 body {
-  text-align: center;
+  font-family: "Inter";
+  background-color: #f2f3f6;
+  color: #1b1d20;
+  max-width: 450px;
+  padding: 20px;
+  margin: 0 auto;
+  line-height: 26px;
 }
 
 h1 {
-  color: hotpink;
-  font-family: cursive;
-  font-size: 55px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5em;
+h2 {
+  font-size: 20px;
+  font-weight: 700;
 }
 
-a {
-  color: dodgerblue;
+button {
+  background-color: #346ddb;
+  color: white;
+  font-weight: 700;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #1f4183;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 36px;
+}
+
+input {
+  display: block;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #d1d5dc;
+}
+
+.output {
+  margin-top: 40px;
+  padding: 0 13px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+}
+
+#output {
+  overflow: scroll;
 }
